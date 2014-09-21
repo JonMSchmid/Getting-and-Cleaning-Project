@@ -22,86 +22,336 @@ Finally a Fast Fourier Transform (FFT) was applied to the frequency signals.
 
 ****Note each row (with the exception of the "Subject" and "ActivityName" variables) of the produced finaldata.txt includes the average of each variable across the listed activity for the listed subject.
 
-
-"Subject"															The number of the subject being observed							
-"ActivityName"														The name of the activity being observed
-"Time Body Acceleration Signal Mean X"								The mean body acceleration signal time in the X axis										
-"Time Body Acceleration Signal Mean Y"								The mean body acceleration signal time in the Y axis		
-"Time Body Acceleration Signal Mean Z"								The mean body acceleration signal time in the Z axis		
-"Time Body Acceleration Signal Standard Deviation X"				The standard deviation of the body acceleration signal time in the X axis
-"Time Body Acceleration Signal Standard Deviation Y"				The standard deviation of the body acceleration signal time in the Y axis
-"Time Body Acceleration Signal Standard Deviation Z"				The standard deviation of the body acceleration signal time in the Z axis
-"Time Gravity Acceleration Signal Mean X"							The mean gravity acceleration signal time in the X axis
-"Time Gravity Acceleration Signal Mean Y"							The mean gravity acceleration signal time in the Y axis
-"Time Gravity Acceleration Signal Mean Z"							The mean gravity acceleration signal time in the Z axis
-"Time Gravity Acceleration Signal Standard Deviation X"				The standard deviation of the gravity acceleration signal time in the X axis
-"Time Gravity Acceleration Signal Standard Deviation Y"				The standard deviation of the gravity acceleration signal time in the Y axis
-"Time Gravity Acceleration Signal Standard Deviation Z"				The standard deviation of the gravity acceleration signal time in the Z axis
-"Time Body Acceleration Signal Jerk Mean X"							The mean jerk of the body acceleration signal time in the X axis	
-"Time Body Acceleration Signal Jerk Mean Y"							The mean jerk of the body acceleration signal time in the Y axis	
-"Time Body Acceleration Signal Jerk Mean Z"							The mean jerk of the body acceleration signal time in the Z axis	
-"Time Body Acceleration Signal Jerk Standard Deviation X"			The standard deviation jerk of the body acceleration signal time in the X axis	
-"Time Body Acceleration Signal Jerk Standard Deviation Y"			The standard deviation jerk of the body acceleration signal time in the Y axis	
-"Time Body Acceleration Signal Jerk Standard Deviation Z"			The standard deviation jerk of the body acceleration signal time in the Z axis	
-"Time Body Gyro Signal Mean X"										The mean of the body gyroscope signal time in the X axis	
-"Time Body Gyro Signal Mean Y"										The mean of the body gyroscope signal time in the Y axis	
-"Time Body Gyro Signal Mean Z"										The mean of the body gyroscope signal time in the Z axis	
-"Time Body Gyro Signal Standard Deviation X"						The standard deviation of the gyroscope signal time in the X axis
-"Time Body Gyro Signal Standard Deviation Y"						The standard deviation of the gyroscope signal time in the Y axis
-"Time Body Gyro Signal Standard Deviation Z"						The standard deviation of the gyroscope signal time in the Z axis
-"Time Body Gyro Signal Jerk Mean X"									The mean jerk of the body gyroscope signal time in the X axis
-"Time Body Gyro Signal Jerk Mean Y"									The mean jerk of the body gyroscope signal time in the Y axis
-"Time Body Gyro Signal Jerk Mean Z"									The mean jerk of the body gyroscope signal time in the Z axis
-"Time Body Gyro Signal Jerk Standard Deviation X"					The standard deviation jerk of the body gyroscope signal time in the X axis
-"Time Body Gyro Signal Jerk Standard Deviation Y"					The standard deviation jerk of the body gyroscope signal time in the Y axis
-"Time Body Gyro Signal Jerk Standard Deviation Z"					The standard deviation jerk of the body gyroscope signal time in the Z axis
-"Time Body Acceleration Signal Magnitude Mean"						The mean magnitude of the body acceleration signal time
-"Time Body Acceleration Signal Magnitude Standard Deviation"		The standard deviation of the magnitude of the body acceleration signal time
-"Time Gravity Acceleration Signal Magnitude Mean"					The mean magnitude of the gravity acceleration signal time
-"Time Gravity Acceleration Signal Magnitude Standard Deviation"		The standard deviation of the magnitude of the gravity acceleration signal time
-"Time Body Acceleration Signal Jerk Magnitude Mean"					The mean magnitude jerk of the body acceleration signal time
-"Time Body Acceleration Signal Jerk Magnitude Standard Deviation"	The standard deviation magnitude jerk of the body acceleration signal time
-"Time Body Gyro Signal Magnitude Mean"								The mean magnitude of the gyro acceleration signal time
-"Time Body Gyro Signal Magnitude Standard Deviation"				The standard deviation of the magnitude of the gyro acceleration signal time
-"Time Body Gyro Signal Jerk Magnitude Mean"							The mean magnitude jerk of the gyro acceleration signal time
-"Time Body Gyro Signal Jerk Magnitude Standard Deviation"			The standard deviation jerk of the magnitude of the gyro acceleration signal time
-"Frequency Body Acceleration Signal Mean X"							The mean frequency of the body acceleration signal in the X axis
-"Frequency Body Acceleration Signal Mean Y"							The mean frequency of the body acceleration signal in the Y axis
-"Frequency Body Acceleration Signal Mean Z"							The mean frequency of the body acceleration signal in the Z axis
-"Frequency Body Acceleration Signal Standard Deviation X"			The standard deviation of the frequency of the body acceleration signal in the X axis
-"Frequency Body Acceleration Signal Standard Deviation Y"			The standard deviation of the frequency of the body acceleration signal in the Y axis
-"Frequency Body Acceleration Signal Standard Deviation Z"			The standard deviation of the frequency of the body acceleration signal in the Z axis
-"Frequency Body Acceleration Signal Mean Frequency X"				The mean of the frequency of the body acceleration signal frequency in the X axis
-"Frequency Body Acceleration Signal Mean Frequency Y"				The mean of the frequency of the body acceleration signal frequency in the Y axis
-"Frequency Body Acceleration Signal Mean Frequency Z"				The mean of the frequency of the body acceleration signal frequency in the Z axis
-"Frequency Body Acceleration Signal Jerk Mean X"					The mean jerk of the frequency of the body acceleration signal in the X axis							
-"Frequency Body Acceleration Signal Jerk Mean Y"					The mean jerk of the frequency of the body acceleration signal in the Y axis							
-"Frequency Body Acceleration Signal Jerk Mean Z"					The mean jerk of the frequency of the body acceleration signal in the Z axis							
-"Frequency Body Acceleration Signal Jerk Standard Deviation X"		The standard deviation jerk of the frequency of the body acceleration signal in the X axis							
-"Frequency Body Acceleration Signal Jerk Standard Deviation Y"		The standard deviation jerk of the frequency of the body acceleration signal in the Y axis							
-"Frequency Body Acceleration Signal Jerk Standard Deviation Z"		The standard deviation jerk of the frequency of the body acceleration signal in the Z axis							
-"Frequency Body Acceleration Signal Jerk Mean Frequency X"			The mean jerk of the frequency of the body acceleration signal frequency in the X axis							
-"Frequency Body Acceleration Signal Jerk Mean Frequency Y"			The mean jerk of the frequency of the body acceleration signal frequency in the Y axis							
-"Frequency Body Acceleration Signal Jerk Mean Frequency Z"			The mean jerk of the frequency of the body acceleration signal frequency in the Z axis							
-"Frequency Body Gyro Signal Mean X"									The mean of the frequency of the gyro acceleration signal in the X axis							
-"Frequency Body Gyro Signal Mean Y"									The mean of the frequency of the gyro acceleration signal in the Y axis							
-"Frequency Body Gyro Signal Mean Z"									The mean of the frequency of the gyro acceleration signal in the Z axis							
-"Frequency Body Gyro Signal Standard Deviation X"					The standard deviation of the frequency of the gyro acceleration signal in the X 
-"Frequency Body Gyro Signal Standard Deviation Y"					The standard deviation of the frequency of the gyro acceleration signal in the Y 
-"Frequency Body Gyro Signal Standard Deviation Z"					The standard deviation of the frequency of the gyro acceleration signal in the Z 
-"Frequency Body Gyro Signal Mean Frequency X"						The mean of the frequency of the gyro acceleration signal frequency in the X axis							
-"Frequency Body Gyro Signal Mean Frequency Y"						The mean of the frequency of the gyro acceleration signal frequency in the Y axis							
-"Frequency Body Gyro Signal Mean Frequency Z"						The mean of the frequency of the gyro acceleration signal frequency in the Z axis							
-"Frequency Body Acceleration Signal Magnitude Mean"					The mean magnitude frequency of the body acceleration signal 
-"Frequency Body Acceleration Signal Magnitude Standard Deviation"	The standard deviation of the magnitude frequency of the body acceleration signal
-"Frequency Body Acceleration Signal Magnitude Mean Frequency"		The mean magnitude frequency of the body acceleration signal frequency
-"Frequency Body Acceleration Signal Jerk Magnitude Mean"			The mean jerk magnitude frequency of the body acceleration signal 
-"Frequency Body Acceleration Signal Jerk Magnitude Standard Deviation"	The standard deviation of the magnitude frequency of the body acceleration signal 
-"Frequency Body Acceleration Signal Jerk Magnitude Mean Frequency"	The mean jerk magnitude frequency of the body acceleration signal frequency
-"Frequency Body Gyro Signal Magnitude Mean"							The mean magnitude frequency of the gyro acceleration signal 
-"Frequency Body Gyro Signal Magnitude Standard Deviation"			The standard deviation of the magnitude frequency of the gyro acceleration signal
-"Frequency Body Gyro Signal Magnitude Mean Frequency"				The mean magnitude frequency of the gyro acceleration signal frequency
-"Frequency Body Gyro Signal Jerk Magnitude Mean"					The mean jerk magnitude frequency of the gyro acceleration signal
-"Frequency Body Gyro Signal Jerk Magnitude Standard Deviation"		The standard deviation jerk of the magnitude frequency of the gyro acceleration signal
-"Frequency Body Gyro Signal Jerk Magnitude Mean Frequency"			The mean jerk magnitude frequency of the gyro acceleration signal frequency
+<table border="0" cellpadding="0" cellspacing="1" style="width: 1000px;">
+	<tbody>
+		<tr>
+			<td><strong>Variable</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>Subject</td>
+			<td>The number of the subject being observed</td>
+		</tr>
+		<tr>
+			<td>ActivityName</td>
+			<td>The name of the activity being observed</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Mean X</td>
+			<td>The mean body acceleration signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Mean Y</td>
+			<td>The mean body acceleration signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Mean Z</td>
+			<td>The mean body acceleration signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Standard Deviation X</td>
+			<td>The standard deviation of the body acceleration signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Standard Deviation Y</td>
+			<td>The standard deviation of the body acceleration signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Standard Deviation Z</td>
+			<td>The standard deviation of the body acceleration signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Gravity Acceleration Signal Mean X</td>
+			<td>The mean gravity acceleration signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Gravity Acceleration Signal Mean Y</td>
+			<td>The mean gravity acceleration signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Gravity Acceleration Signal Mean Z</td>
+			<td>The mean gravity acceleration signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Gravity Acceleration Signal Standard Deviation X</td>
+			<td>The standard deviation of the gravity acceleration signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Gravity Acceleration Signal Standard Deviation Y</td>
+			<td>The standard deviation of the gravity acceleration signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Gravity Acceleration Signal Standard Deviation Z</td>
+			<td>The standard deviation of the gravity acceleration signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Jerk Mean X</td>
+			<td>The mean jerk of the body acceleration signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Jerk Mean Y</td>
+			<td>The mean jerk of the body acceleration signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Jerk Mean Z</td>
+			<td>The mean jerk of the body acceleration signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Jerk Standard Deviation X</td>
+			<td>The standard deviation jerk of the body acceleration signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Jerk Standard Deviation Y</td>
+			<td>The standard deviation jerk of the body acceleration signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Jerk Standard Deviation Z</td>
+			<td>The standard deviation jerk of the body acceleration signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Mean X</td>
+			<td>The mean of the body gyroscope signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Mean Y</td>
+			<td>The mean of the body gyroscope signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Mean Z</td>
+			<td>The mean of the body gyroscope signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Standard Deviation X</td>
+			<td>The standard deviation of the gyroscope signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Standard Deviation Y</td>
+			<td>The standard deviation of the gyroscope signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Standard Deviation Z</td>
+			<td>The standard deviation of the gyroscope signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Jerk Mean X</td>
+			<td>The mean jerk of the body gyroscope signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Jerk Mean Y</td>
+			<td>The mean jerk of the body gyroscope signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Jerk Mean Z</td>
+			<td>The mean jerk of the body gyroscope signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Jerk Standard Deviation X</td>
+			<td>The standard deviation jerk of the body gyroscope signal time in the X axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Jerk Standard Deviation Y</td>
+			<td>The standard deviation jerk of the body gyroscope signal time in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Jerk Standard Deviation Z</td>
+			<td>The standard deviation jerk of the body gyroscope signal time in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Magnitude Mean</td>
+			<td>The mean magnitude of the body acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Magnitude Standard Deviation</td>
+			<td>The standard deviation of the magnitude of the body acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Gravity Acceleration Signal Magnitude Mean</td>
+			<td>The mean magnitude of the gravity acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Gravity Acceleration Signal Magnitude Standard Deviation</td>
+			<td>The standard deviation of the magnitude of the gravity acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Jerk Magnitude Mean</td>
+			<td>The mean magnitude jerk of the body acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Body Acceleration Signal Jerk Magnitude Standard Deviation</td>
+			<td>The standard deviation magnitude jerk of the body acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Magnitude Mean</td>
+			<td>The mean magnitude of the gyro acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Magnitude Standard Deviation</td>
+			<td>The standard deviation of the magnitude of the gyro acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Jerk Magnitude Mean</td>
+			<td>The mean magnitude jerk of the gyro acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Time Body Gyro Signal Jerk Magnitude Standard Deviation</td>
+			<td>The standard deviation jerk of the magnitude of the gyro acceleration signal time</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Mean X</td>
+			<td>The mean frequency of the body acceleration signal in the X axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Mean Y</td>
+			<td>The mean frequency of the body acceleration signal in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Mean Z</td>
+			<td>The mean frequency of the body acceleration signal in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Standard Deviation X</td>
+			<td>The standard deviation of the frequency of the body acceleration signal in the X axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Standard Deviation Y</td>
+			<td>The standard deviation of the frequency of the body acceleration signal in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Standard Deviation Z</td>
+			<td>The standard deviation of the frequency of the body acceleration signal in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Mean Frequency X</td>
+			<td>The mean of the frequency of the body acceleration signal frequency in the X axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Mean Frequency Y</td>
+			<td>The mean of the frequency of the body acceleration signal frequency in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Mean Frequency Z</td>
+			<td>The mean of the frequency of the body acceleration signal frequency in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Mean X</td>
+			<td>The mean jerk of the frequency of the body acceleration signal in the X axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Mean Y</td>
+			<td>The mean jerk of the frequency of the body acceleration signal in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Mean Z</td>
+			<td>The mean jerk of the frequency of the body acceleration signal in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Standard Deviation X</td>
+			<td>The standard deviation jerk of the frequency of the body acceleration signal in the X axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Standard Deviation Y</td>
+			<td>The standard deviation jerk of the frequency of the body acceleration signal in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Standard Deviation Z</td>
+			<td>The standard deviation jerk of the frequency of the body acceleration signal in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Mean Frequency X</td>
+			<td>The mean jerk of the frequency of the body acceleration signal frequency in the X axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Mean Frequency Y</td>
+			<td>The mean jerk of the frequency of the body acceleration signal frequency in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Mean Frequency Z</td>
+			<td>The mean jerk of the frequency of the body acceleration signal frequency in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Mean X</td>
+			<td>The mean of the frequency of the gyro acceleration signal in the X axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Mean Y</td>
+			<td>The mean of the frequency of the gyro acceleration signal in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Mean Z</td>
+			<td>The mean of the frequency of the gyro acceleration signal in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Standard Deviation X</td>
+			<td>The standard deviation of the frequency of the gyro acceleration signal in the X</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Standard Deviation Y</td>
+			<td>The standard deviation of the frequency of the gyro acceleration signal in the Y</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Standard Deviation Z</td>
+			<td>The standard deviation of the frequency of the gyro acceleration signal in the Z</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Mean Frequency X</td>
+			<td>The mean of the frequency of the gyro acceleration signal frequency in the X axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Mean Frequency Y</td>
+			<td>The mean of the frequency of the gyro acceleration signal frequency in the Y axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Mean Frequency Z</td>
+			<td>The mean of the frequency of the gyro acceleration signal frequency in the Z axis</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Magnitude Mean</td>
+			<td>The mean magnitude frequency of the body acceleration signal</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Magnitude Standard Deviation</td>
+			<td>The standard deviation of the magnitude frequency of the body acceleration signal</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Magnitude Mean Frequency</td>
+			<td>The mean magnitude frequency of the body acceleration signal frequency</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Magnitude Mean</td>
+			<td>The mean jerk magnitude frequency of the body acceleration signal</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Magnitude Standard Deviation</td>
+			<td>The standard deviation of the magnitude frequency of the body acceleration signal</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Acceleration Signal Jerk Magnitude Mean Frequency</td>
+			<td>The mean jerk magnitude frequency of the body acceleration signal frequency</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Magnitude Mean</td>
+			<td>The mean magnitude frequency of the gyro acceleration signal</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Magnitude Standard Deviation</td>
+			<td>The standard deviation of the magnitude frequency of the gyro acceleration signal</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Magnitude Mean Frequency</td>
+			<td>The mean magnitude frequency of the gyro acceleration signal frequency</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Jerk Magnitude Mean</td>
+			<td>The mean jerk magnitude frequency of the gyro acceleration signal</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Jerk Magnitude Standard Deviation</td>
+			<td>The standard deviation jerk of the magnitude frequency of the gyro acceleration signal</td>
+		</tr>
+		<tr>
+			<td>Frequency Body Gyro Signal Jerk Magnitude Mean Frequency</td>
+			<td>The mean jerk magnitude frequency of the gyro acceleration signal frequency</td>
+		</tr>
+	</tbody>
+</table>
 
